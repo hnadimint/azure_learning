@@ -1,0 +1,8 @@
+{
+	"name": "pos_etl_pipeline",
+	"properties": {
+		"description": "pos pipeline",
+		"concurrency": 1,
+		"annotations": []
+	}
+}
