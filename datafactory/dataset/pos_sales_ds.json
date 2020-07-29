@@ -1,0 +1,37 @@
+{
+	"name": "pos_sales_ds",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "posdb_connection",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "transaction_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "customer_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "item_id",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "item_price",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales"
+		}
+	}
+}
